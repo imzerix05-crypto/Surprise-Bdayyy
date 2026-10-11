@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff3f5">
+  <title>A little world for you ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true">✦　·　♡　✧　·　✦　·　♡</div>
+  <header class="top">
+    <span class="tiny-flower">✿</span>
+    <p>MADE WITH LOVE, JUST FOR YOU</p>
+    <span class="tiny-flower">✿</span>
+  </header>
+
+  <main>
+    <section class="hero card" id="home">
+      <div class="eyebrow">a tiny surprise for my favourite person</div>
+      <h1>Happy Birthday,<br><span class="script" id="heroName">my love</span> ♡</h1>
+      <p class="intro">I made you a little place on the internet, filled with pieces of my heart.</p>
+      <div class="envelope-wrap">
+        <button class="envelope" id="openLetter" aria-label="Open your letter">
+          <span class="envelope-flap"></span><span class="letter-preview">for you, always ♡</span><span class="envelope-heart">♥</span>
+        </button>
+        <p class="hint">tap the envelope to open your letter</p>
+      </div>
+      <div class="letter hidden" id="letter">
+        <div class="letter-paper">
+          <p class="script">To my favourite human,</p>
+          <p id="letterText">Happy birthday, sweetheart. I hope this new year of your life brings you the kind of happiness you give to everyone around you. Thank you for being you. You deserve every soft, beautiful thing in this world.</p>
+          <p class="script signoff">always yours ♡</p>
+        </div>
+      </div>
+      <button class="pill" id="musicButton">♫ Play our song</button>
+      <p class="music-note">Add a legally obtained audio file named <b>Haareya.mp3</b> to the <code>music</code> folder.</p>
+      <audio id="song" src="music/Haareya.mp3" preload="none"></audio>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><span>01 — LITTLE THINGS</span><h2>Reasons I adore you</h2><p>Tap each flower to uncover a little note.</p></div>
+      <div class="flower-grid" id="flowerGrid"></div>
+    </section>
+
+    <section class="section memory-section">
+      <div class="section-heading"><span>02 — OUR LITTLE UNIVERSE</span><h2>Moments I want to keep</h2><p>Replace these placeholders with your favourite photos.</p></div>
+      <div class="photo-grid" id="photoGrid"></div>
+      <p class="small-note">Tip: add photos to the <code>photos</code> folder and name them <code>photo1.jpg</code>, <code>photo2.jpg</code>, and so on. You can use JPG, PNG, or WEBP—just update the filenames in <code>script.js</code>.</p>
+    </section>
+
+    <section class="section notes-section">
+      <div class="section-heading"><span>03 — OPEN WHENEVER</span><h2>Two tiny letters</h2><p>For days when you need a little extra love.</p></div>
+      <div class="note-cards">
+        <button class="note-card" data-note="0"><span>♡</span><b>Open when you miss me</b><small>a little note just for you</small></button>
+        <button class="note-card" data-note="1"><span>✿</span><b>Open when you need a smile</b><small>your pocket-sized sunshine</small></button>
+      </div>
+    </section>
+
+    <section class="final card">
+      <div class="eyebrow">one last thing...</div>
+      <h2>Make a wish, birthday boy ✨</h2>
+      <div class="cake" aria-label="Birthday cake"><div class="flame">✦</div><div class="candle"></div><div class="icing"></div><div class="cake-top"></div><div class="cake-bottom"></div><div class="plate"></div></div>
+      <button class="pill" id="wishButton">Tap for your final surprise ♡</button>
+      <p id="finalMessage" class="final-message hidden">If I could give you one thing, it would be the ability to see yourself through my eyes. Then you'd know just how special you are. Happy birthday, my favourite person. ♡</p>
+      <div class="heart-row">♡　♡　♡</div>
+    </section>
+  </main>
+  <footer>made of little memories & a whole lot of love <span>♡</span></footer>
+
+  <dialog id="noteDialog">
+    <button class="close" id="closeDialog" aria-label="Close">×</button>
+    <div class="dialog-flower">✿</div><h2 id="dialogTitle">A little note</h2><p id="dialogBody"></p><span class="script">with love, always ♡</span>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
